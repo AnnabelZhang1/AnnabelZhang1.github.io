@@ -25,12 +25,15 @@ html {
     --dark-periwinkle: #4f4f8a;
     /* rgb(139, 139, 191) */
     --ldark-periwinkle: #8b8bbf;
-    --white: #FFFFFF;
+    /* --white: #FFFFFF; */
+    --white: #f3f2f7;
     --black: #000000;
     --light-grey: #9e9ec8;
     --icon-color: #000000;
     /* rgb(248, 247, 244) */
-    --offwhite: #f8f7f4;
+    /* --offwhite: #f8f7f4; */
+    /* --offwhite: #ebede5; */
+    --offwhite: #e2dff0;
     --blur-element-color: #E7DBDB;
     --shadow-1: 0 0 20px 5px rgb(204, 204, 255, 0.7); 
     --shadow-2: 0 0 20px 5px rgba(232, 219, 219, 0.6);
@@ -38,7 +41,8 @@ html {
 
 /* ===== [DARK MODE] COLOR VARIABLES ===== */
 body.dark-mode{
-    --black: #FFFFFF;
+    /* --black: #FFFFFF; */
+    --black: #f3f2f7;
     --white: #272328;
     --periwinkle: #8c7bc1;
     --dark-periwinkle: #CCCCFF;
@@ -228,7 +232,7 @@ header{
 }
 
 .hero-social-icons i{
-    font-size: 24px;
+    font-size: 40px;
     color: var(--icon-color);
     cursor: pointer;
     transition: color 0.3s;
@@ -325,7 +329,7 @@ header{
 
 /* Contact */
 
-.contact {
+/* .contact {
     padding: 60px 20px;
     background-color: var(--white);
     color: var(--black);
@@ -346,7 +350,7 @@ header{
     color: var(--dark-periwinkle);
     text-decoration: none;
     font-weight: bold;
-}
+} */
 
 
 /* ===== Animations ==== */
