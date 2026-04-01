@@ -20,3 +20,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Gallery item click → open detail page
+document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const projectId = item.getAttribute('data-project');
+        const detailPage = document.getElementById(projectId);
+        if (detailPage) {
+            detailPage.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            // Scroll detail page to top
+            detailPage.scrollTop = 0;
+        }
+    });
+});
+
+// Close detail page
+function closeDetail() {
+    document.querySelectorAll('.project-detail-page.active').forEach(page => {
+        page.classList.remove('active');
+    });
+    document.body.style.overflow = '';
+}
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeDetail();
+});

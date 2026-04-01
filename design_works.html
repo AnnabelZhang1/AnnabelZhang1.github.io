@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio | Annabel Zhang</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <header>
+        <div class="logo">
+            <span>Annabel Zhang</span>  
+        </div>
+
+        <ul class="nav-menu">
+            <li class="nav-list">
+                <a href="design_home.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-list">
+                <a href="design_works.html" class="nav-link">Design Work</a>
+            </li>
+        </ul>
+
+        <div class="nav-button">
+            <span class="dark-mode-toggle"><i class="bx bx-moon"></i></span>
+            <span class="menu-toggle"><i class="bx bx-menu"></i></span>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="design-hero">
+        <h1>Design Work</h1>
+        <p>A curated collection of visual and interactive design projects</p>
+    </div>
+
+    <!-- GALLERY -->
+    <section class="gallery-section">
+        <div class="gallery-grid">
+
+            <!-- Project 1 -->
+            <a class="gallery-item" data-project="project-1">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=900&h=500&fit=crop" alt="Worlds Beyond">
+                <div class="gallery-overlay">
+                    <span class="overlay-title">Worlds Beyond - A Book About Exploring Color</span>
+                    <span class="overlay-category">Color Theory</span>
+                </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a class="gallery-item" data-project="project-2">
+                <img src="landmarkposter_thumbnail.png" alt="Prague Astronomical Clock Poster">
+                <div class="gallery-overlay">
+                    <span class="overlay-title">Prague Astronomical Clock Poster</span>
+                    <span class="overlay-category">Information Design</span>
+                </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a class="gallery-item" data-project="project-3">
+                <img src="howto_thumbnail.png" alt="How To Fold a Lotus Flower">
+                <div class="gallery-overlay">
+                    <span class="overlay-title">How To Fold a Lotus Flower</span>
+                    <span class="overlay-category">Information Design</span>
+                </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a class="gallery-item" data-project="project-4">
+                <img src="timeline_thumbnail.png" alt="Visualizing Google's History">
+                <div class="gallery-overlay">
+                    <span class="overlay-title">Visualizing Google's History</span>
+                    <span class="overlay-category">Information Design</span>
+                </div>
+            </a>
+
+            <!-- Project 5 -->
+            <!-- <a class="gallery-item" data-project="project-5">
+                <img src="https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?w=600&h=400&fit=crop" alt="Typography Exploration">
+                <div class="gallery-overlay">
+                    <span class="overlay-title">Typography Exploration</span>
+                    <span class="overlay-category">Typography</span>
+                </div>
+            </a> -->
+
+        </div>
+    </section>
+
+    <!-- ===== PROJECT DETAIL PAGES ===== -->
+
+    <!-- Project 1 Detail -->
+    <div class="project-detail-page" id="project-1">
+        <button class="detail-back-btn" onclick="closeDetail()"><i class="bx bx-arrow-back"></i> Back to Gallery</button>
+        <div class="detail-color-bar bar-purple"></div>
+        <div class="detail-body">
+            <div class="detail-left">
+                <h1>Worlds Beyond</h1>
+                <p class="detail-category">Color Theory</p>
+
+                <h2>Description</h2>
+                <p>This hands-on project explores how typography and color palette work together to create a cohesive piece, and how multiple pieces can
+                combine to tell an overarching story. Worlds Beyond presents five distinct planets, each with its own typographic and color scheme.
+                They were designed as individual posters, then combined into an accordion book that tells the story of a cosmic traveler.</p>
+
+                <h2>Design Process</h2>
+                <p>I worked with five different color schemes: analagous, complementary, split complementary, tertiary triad, and monochromatic. Each color
+                scheme was paired with an adjective to create a piece that evokes that word through visuals and typography. I wanted my overarching story
+                to be a traveler journaling his visits to planets on his adventure. Each planet had to evoke its associated adjective through composition, 
+                texture, and/or color. I ultimately decided on these combinations:</p>
+
+                <ul>
+                    <li>Analogous: blue, blue-violet, violet</li>
+                    <li>Complementary: yellow, violet</li>
+                    <li>Split Complementary: red-orange, yellow-orange, blue</li>
+                    <li>Tertiary Triad: yellow-orange, blue-green, red-violet</li>
+                    <li>Monochromatic: blue</li>
+                </ul>
+
+            </div>
+            <div class="detail-right">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=800&fit=crop">
+            </div>
+        </div>
+        <div class="detail-bottom-images">
+            <div class="detail-image-grid">
+                <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=500&h=350&fit=crop">
+                <img src="https://images.unsplash.com/photo-1581291518633-83b4eef1d2fa?w=500&h=350&fit=crop">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=500&h=350&fit=crop">
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Detail -->
+    <div class="project-detail-page" id="project-2">
+        <button class="detail-back-btn" onclick="closeDetail()"><i class="bx bx-arrow-back"></i> Back to Gallery</button>
+        <div class="detail-color-bar bar-rose"></div>
+        <div class="detail-body">
+            <div class="detail-left">
+                <h1>Prague Astronomical Clock Poster</h1>
+                <p class="detail-category">Information Design</p>
+
+                <h2>Description</h2>
+                <p>The world is filled with interesting landmarks, and each has a story to tell. There is data built into every landmark’s story,
+                    and that data can be broken down into sets that include materials, location, visitation numbers, etc. This project resulted in
+                    both a static 18×24 print piece as well as an interactive mobile mockup of information relating to the astronomical clock at Prague.</p>
+
+                <h2>Design Process</h2>
+                <p>???</p>
+            </div>
+            <div class="detail-right">
+                <iframe src="https://embed.figma.com/proto/DqJBctiU6kJySJNxeOmwzw/Landmark-Poster?node-id=19-88&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="detail-bottom-images">
+            <div class="detail-image-grid">
+                <img src="Portfolio Images/landmark_poster_img.png">
+                <img src="Portfolio Images/landmark_portfolio_images/AZ_DSCF9709.JPG">
+                <!-- <img src="Portfolio Images/landmark_portfolio_images/AZ_DSCF9711.JPG"> -->
+                <img src="Portfolio Images/landmark_portfolio_images/AZ_DSCF9714.JPG">
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 Detail -->
+    <div class="project-detail-page" id="project-3">
+        <button class="detail-back-btn" onclick="closeDetail()"><i class="bx bx-arrow-back"></i> Back to Gallery</button>
+        <div class="detail-color-bar bar-sage"></div>
+        <div class="detail-body">
+            <div class="detail-left">
+                <h1>How To Fold a Lotus Flower</h1>
+                <p class="detail-category">Information Design</p>
+
+                <h2>Description</h2>
+                <p>In an age where video tutorials dominate, how can information design offer something more universal and accessible?
+                    This project answers that question through a step-by-step interactive infographic showing users how to fold an origami lotus flower.
+                    Two deliverables were produced: a mobile and desktop interactive prototype. The challenge was to
+                    show rather than tell, and let illustrations carry the explanation while keeping text at a minimum.</p>
+
+                <h2>Design Process</h2>
+                <p> ??? </p>
+                </div>
+            <div class="detail-right">
+                <iframe src="https://embed.figma.com/proto/rACjF1EySmX3O7tCcd0GkX/How-To-Project?node-id=1-2&viewport=588%2C515%2C0.15&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="detail-bottom-images">
+            <div class="detail-image-grid">
+                <img src="Portfolio Images/howto_mobile_mockup.png">
+                <img src="Portfolio Images/howto_desktop_mockup.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 4 Detail -->
+    <div class="project-detail-page" id="project-4">
+        <button class="detail-back-btn" onclick="closeDetail()"><i class="bx bx-arrow-back"></i> Back to Gallery</button>
+        <div class="detail-color-bar bar-slate"></div>
+        <div class="detail-body">
+            <div class="detail-left">
+                <h1>Visualizing Google's History</h1>
+                <p class="detail-category">Information Design</p>
+                <h2>Description</h2>
+                <p>Timelines are important pieces of information design that offer snapshots of historical data in a digestible, visually appealing way. 
+                    This project presents a timeline of Google's history with embedded data sets including product launches and leadership changes.
+                    This timeline was designed as a static 11×17 print piece, balancing information density with clear visual hierarchy.</p>
+                
+                <h2>Design Process</h2>
+                <p>???</p>
+            </div>
+        </div>
+        <div class="detail-bottom-images" style="text-align: center;">
+            <img src="Portfolio Images/complextimeline_img.png" style="max-width: 100%; height: auto; border-radius: 10px;">
+        </div>
+    </div>
+
+    <!-- Project 5 Detail -->
+    <div class="project-detail-page" id="project-5">
+        <button class="detail-back-btn" onclick="closeDetail()"><i class="bx bx-arrow-back"></i> Back to Gallery</button>
+        <div class="detail-color-bar bar-amber"></div>
+        <div class="detail-body">
+            <div class="detail-left">
+                <h1>Typography Exploration</h1>
+                <p class="detail-category">Typography</p>
+
+                <h2>Description</h2>
+                <p>An experimental typography project exploring the relationship between letterforms and emotion. Each composition uses type as the primary visual element, pushing the boundaries of legibility and expression to create pieces that live between design and art.</p>
+
+                <h2>Design Process</h2>
+                <p>The project began with studying historical type specimens and deconstructing letterforms to understand their structural DNA. From there, digital experiments layered, distorted, and recombined type to discover new visual languages.</p>
+                <p>Constraints were used as creative catalysts — some pieces were limited to a single typeface, others to monochrome palettes. The final collection represents a range of moods from chaotic energy to meditative stillness, all achieved through typographic means alone.</p>
+            </div>
+            <div class="detail-right">
+                <img src="https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?w=600&h=800&fit=crop" alt="Typography Exploration">
+            </div>
+        </div>
+        <div class="detail-bottom-images">
+            <div class="detail-image-grid">
+                <img src="https://images.unsplash.com/photo-1467348733814-f93fc480bec6?w=500&h=350&fit=crop">
+                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500&h=350&fit=crop">
+                <img src="https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?w=500&h=350&fit=crop">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
