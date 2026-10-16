@@ -634,10 +634,10 @@ header{
         }
 
         .detail-color-bar.bar-purple { background: #18243d; }
-        .detail-color-bar.bar-rose { background: #ebd573; }
+        .detail-color-bar.bar-sun { background: #ebd573; }
         .detail-color-bar.bar-sage { background: #a3b7a0; }
         .detail-color-bar.bar-slate { background: #566570; }
-        .detail-color-bar.bar-amber { background: #d4b896; }
+        .detail-color-bar.bar-haze { background: #5d5278; }
 
         /* ===== Two-Column Detail Layout ===== */
         .detail-body {
@@ -668,6 +668,11 @@ header{
             border-radius: 12px;
             background: var(--offwhite);
             border: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .detail-right img.logo {
+            width: 456px;
+            height: auto;
         }
 
         .detail-left h1 {
