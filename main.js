@@ -2,12 +2,22 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-menu");
 const darkModeToggle = document.querySelector(".dark-mode-toggle");
 
+// Apply saved theme when the page loads
+try {
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+} catch (e) {}
+
 menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('display-menu');
 });
 
 darkModeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.toggle('dark-mode');
+    try {
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    } catch (e) {}
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -21,7 +31,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Gallery item click → open detail page
+// Gallery item click -> open detail page
 document.querySelectorAll('.gallery-item').forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
