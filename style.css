@@ -643,7 +643,7 @@ header{
         .detail-body {
             display: flex;
             gap: 48px;
-            padding: 50px 8vw 40px;
+            padding: 20px 8vw 0px; /*50px 8vw 40px*/
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -657,7 +657,7 @@ header{
             flex: 0 0 380px;
             display: flex;
             align-items: flex-start;    
-            padding-top: 90px;
+            /* padding-top: 90px; */
         }
 
         .detail-right img,
@@ -724,7 +724,7 @@ header{
 
         /* ===== Bottom Image Grid ===== */
         .detail-bottom-images {
-            padding: 0 8vw 80px;
+            padding: 0 8vw 40px;
             max-width: 1400px;
             margin: 0 auto;
         }
